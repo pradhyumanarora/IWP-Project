@@ -1,6 +1,7 @@
 function validateForm() {
   var trekname = document.forms["trekform"]["trekname"].value;
   var trekdate = document.forms["trekform"]["trekdate"].value;
+  var trektime = document.forms["trekform"]["trektime"].value;
   var treklocation = document.forms["trekform"]["treklocation"].value;
   var trekdescription = document.forms["trekform"]["trekdescription"].value;
   var trekdifficulty = document.forms["trekform"]["trekdifficulty"].value;
@@ -16,6 +17,10 @@ function validateForm() {
   }
   if (trekdate == "") {
     alert("Trek Date must be filled out");
+    return false;
+  }
+  if (trektime == "") {
+    alert("Trek Time must be filled out");
     return false;
   }
   if (treklocation == "") {
