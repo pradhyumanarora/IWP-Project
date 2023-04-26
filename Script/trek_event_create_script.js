@@ -47,10 +47,10 @@ function validateForm() {
     alert("Number of Spots must be filled out");
     return false;
   }
-  if (trekimage == "") {
-    alert("Trek Image must be uploaded");
-    return false;
-  }
+  // if (trekimage == "") {
+  //   alert("Trek Image must be uploaded");
+  //   return false;
+  // }
   if (trekorganizer == "") {
     alert("Trek Organizer must be filled out");
     return false;

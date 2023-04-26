@@ -5,6 +5,18 @@ body {
   background: linear-gradient(to right, #014945, #00a762);
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  /* position: absolute; */
+  /* top: 30px;
+  right: 130px; */
+  height: 40px;
+}
+
 .container {
   margin: 0 auto;
   padding: 20px;
@@ -39,4 +51,32 @@ tr:nth-child(even) {
 
 tr:hover {
   background-color: #ddd;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  /* position: absolute; */
+  /* top: 30px;
+  right: 130px; */
+  height: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00181c;
+  padding: 10px 40px;
+  border-right: 1px solid #00181c;
+  font-weight: bold;
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+nav a:hover {
+  cursor: pointer;
+  background-color: #00181c;
+  color: #f9fdd8;
+  transition: all 0.2s ease-in-out;
 }

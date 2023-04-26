@@ -2,5 +2,5 @@
 session_start();
 $_SESSION['username'] = null;
 session_destroy();
-header('Location: login_form.php')
+header('Location: login.php')
 ?>
